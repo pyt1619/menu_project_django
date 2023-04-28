@@ -1,0 +1,16 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>HOME</h1>
+    {% load menu_tags %}
+    <nav>
+      {% autoescape off %}
+        {% draw_menu '1'  %}
+      {% endautoescape %}
+    </nav>
+  </body>
+</html>
